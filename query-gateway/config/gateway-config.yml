@@ -4,3 +4,4 @@ available_datasets:
   ethereum-mainnet: "czM6Ly9ldGhlcmV1bS1tYWlubmV0"
   binance-mainnet: "czM6Ly9ic2MtbWFpbm5ldA"
   base-mainnet: "czM6Ly9iYXNlLW1haW5uZXQ"
+  moonbeam-mainnet: "czM6Ly9tb29uYmVhbS1tYWlubmV0"

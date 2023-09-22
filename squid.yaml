@@ -1,7 +1,7 @@
 manifestVersion: subsquid.io/v0.1
 name: quest-quad-chain-squid
 version: 1
-description: A squid that indexes USDC transfers on ETH, BSC and Base
+description: A squid that indexes USDC transfers on ETH, BSC, Base and Moonbeam
 build: 
 deploy:
   addons:
@@ -19,6 +19,10 @@ deploy:
       cmd:
         - node
         - lib/base/main
+    - name: moonbeam-processor
+      cmd:
+        - node
+        - lib/moonbeam/main
   api:
     cmd:
       - npx
