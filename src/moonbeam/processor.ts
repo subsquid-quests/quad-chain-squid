@@ -15,7 +15,8 @@ export const MOONBEAM_USDC_ADDRESS = '0x8f552a71EFE5eeFc207Bf75485b356A0b3f01eC9
 export const processor = new EvmBatchProcessor()
     .setDataSource({
         archive: 'http://localhost:8000/network/moonbeam-mainnet',
-        chain: 'https://moonbeam-rpc.dwellir.com',
+        // Disabled for quests to avoid DDoSing Ankr :)
+        //chain: 'https://moonbeam-rpc.dwellir.com',
     })
     .setFinalityConfirmation(25)
     .setFields({
