@@ -123,19 +123,26 @@ A healthy response should look similar to
    ```
    The command should output lines like these:
    ```
-   [api] 22:00:36 WARN  sqd:graphql-server enabling dumb in-memory cache (size: 100mb, ttl: 1000ms, max-age: 1000ms)
-   [api] 22:00:36 INFO  sqd:graphql-server listening on port 4350
-   [eth-processor] 22:00:36 INFO  sqd:processor processing blocks from 16000000
-   [eth-processor] 22:00:36 INFO  sqd:processor using archive data source
-   [eth-processor] 22:00:36 INFO  sqd:processor prometheus metrics are served at port 40163
-   [bsc-processor] 22:00:36 INFO  sqd:processor processing blocks from 28000000
-   [bsc-processor] 22:00:36 INFO  sqd:processor using archive data source
-   [bsc-processor] 22:00:36 INFO  sqd:processor prometheus metrics are served at port 39533
-   [bsc-processor] 22:00:39 INFO  sqd:processor 28004339 / 32107455, rate: 1537 blocks/sec, mapping: 603 blocks/sec, 1157 items/sec, eta: 45m
-   [eth-processor] 22:00:40 INFO  sqd:processor 16005819 / 18226899, rate: 1686 blocks/sec, mapping: 644 blocks/sec, 1224 items/sec, eta: 22m
-   [bsc-processor] 22:00:44 INFO  sqd:processor 28011319 / 32107455, rate: 1503 blocks/sec, mapping: 648 blocks/sec, 1250 items/sec, eta: 46m
+   [eth-processor] 04:41:33 INFO  sqd:processor processing blocks from 16000000
+   [moonbeam-processor] 04:41:33 INFO  sqd:processor processing blocks from 3000000
+   [bsc-processor] 04:41:33 INFO  sqd:processor processing blocks from 28000000
+   [base-processor] 04:41:33 INFO  sqd:processor processing blocks from 3800000
+   [eth-processor] 04:41:33 INFO  sqd:processor using archive data source
+   [eth-processor] 04:41:33 INFO  sqd:processor prometheus metrics are served at port 38397
+   [moonbeam-processor] 04:41:33 INFO  sqd:processor using archive data source
+   [moonbeam-processor] 04:41:33 INFO  sqd:processor prometheus metrics are served at port 38899
+   [base-processor] 04:41:33 INFO  sqd:processor using archive data source
+   [base-processor] 04:41:33 INFO  sqd:processor prometheus metrics are served at port 42565
+   [bsc-processor] 04:41:33 INFO  sqd:processor using archive data source
+   [bsc-processor] 04:41:33 INFO  sqd:processor prometheus metrics are served at port 33067
+   [api] 04:41:34 WARN  sqd:graphql-server enabling dumb in-memory cache (size: 100mb, ttl: 1000ms, max-age: 1000ms)
+   [api] 04:41:34 INFO  sqd:graphql-server listening on port 4350
+   [eth-processor] 04:41:36 INFO  sqd:processor 16007919 / 18250052, rate: 2572 blocks/sec, mapping: 752 blocks/sec, 1449 items/sec, eta: 15m
+   [eth-processor] 04:41:41 INFO  sqd:processor 16011899 / 18250052, rate: 2712 blocks/sec, mapping: 696 blocks/sec, 1345 items/sec, eta: 14m
+   [bsc-processor] 04:42:42 INFO  sqd:processor 28004339 / 32201121, rate: 64 blocks/sec, mapping: 543 blocks/sec, 1041 items/sec, eta: 18h 19m
+   [moonbeam-processor] 04:42:44 INFO  sqd:processor 3099480 / 4541860, rate: 1412 blocks/sec, mapping: 897 blocks/sec, 2726 items/sec, eta: 18m
    ```
-   The squid should sync in 40-45 minutes. When it's done, stop it with Ctrl-C, then stop and remove the auxiliary containers with
+   The squid should sync in 30-35 minutes. When it's done, stop it with Ctrl-C, then stop and remove the auxiliary containers with
    ```bash
    sqd down
    ```
@@ -144,7 +151,7 @@ A healthy response should look similar to
 
 | Category         | Skill Level                          | Time required (minutes) | Max Participants | Reward                              | Status |
 | ---------------- | ------------------------------------ | ----------------------- | ---------------- | ----------------------------------- | ------ |
-| Squid Deployment | $\textcolor{green}{\textsf{Simple}}$ | ~50                     | -                | $\textcolor{red}{\textsf{750tSQD}}$ | open   |
+| Squid Deployment | $\textcolor{green}{\textsf{Simple}}$ | ~40                     | -                | $\textcolor{red}{\textsf{750tSQD}}$ | open   |
 
 # Acceptance critera
 
